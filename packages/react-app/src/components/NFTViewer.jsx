@@ -107,6 +107,8 @@ export default function NFTViewer({
       setErrorMessage(e.message);
       setNFTData(null);
     })
+
+    
   }
 
   return (
