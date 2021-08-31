@@ -358,7 +358,7 @@ task("send", "Send ETH")
       ).toHexString(),
       nonce: await fromSigner.getTransactionCount(),
       gasPrice: parseUnits(
-          taskArgs.gasPrice ? taskArgs.gasPrice : "2.001",
+          taskArgs.gasPrice ? taskArgs.gasPrice : "1.001",
           "gwei"
       ).toHexString(),
       gasLimit: taskArgs.gasLimit ? taskArgs.gasLimit : 24000,
