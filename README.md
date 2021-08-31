@@ -1,19 +1,21 @@
-# 🎟 nft-e2e-example
+# NFT MInt Test
 
-> An end-to-end example of minting NFTs on Ethereum from your browser. Powered by nft.storage and scaffold-eth!
+> A simple NFT platform to mint NFT
 
 ---
 
-# 🏃‍♀️ Quick Start
-
-required: [Node](https://nodejs.org/dist/latest-v12.x/) plus [Yarn](https://classic.yarnpkg.com/en/docs/install/) and [Git](https://git-scm.com/downloads)
+# Getting Started
+Requirements
+1. Node
+2. Yarn
+3. Git
 
 Clone this repository:
 
 ```bash
-git clone https://github.com/yusefnapora/nft-e2e-example
+git clone https://github.com/geewynn/MintNTF.git
 
-cd nft-e2e-example
+cd MintNTF
 ```
 
 Install dependencies:
@@ -35,7 +37,7 @@ yarn start
 > in a second terminal window:
 
 ```bash
-cd nft-e2e-example
+cd MintNTF
 yarn chain
 
 ```
@@ -43,8 +45,10 @@ yarn chain
 > in a third terminal window:
 
 ```bash
-cd nft-e2e-example
+cd MintNTF
 yarn deploy
 
 ```
 
+Reference
+https://nftschool.dev/tutorial/end-to-end-experience/#getting-set-up

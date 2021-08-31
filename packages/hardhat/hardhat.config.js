@@ -5,7 +5,7 @@ require('dotenv').config({ path: './config/config.env'})
 require("@nomiclabs/hardhat-waffle");
 require("@tenderly/hardhat-tenderly")
 
-console.log('rinkeby id', process.env.RINKEBY)
+// console.log('rinkeby id', process.env.RINKEBY)
 
 require("@nomiclabs/hardhat-etherscan");
 
@@ -23,7 +23,7 @@ const { isAddress, getAddress, formatUnits, parseUnits } = utils;
 //
 // Select the network you want to deploy to here:
 //
-const defaultNetwork = "localhost";
+const defaultNetwork = "rinkeby";
 
 function mnemonic() {
   try {
@@ -58,27 +58,19 @@ module.exports = {
     },
     kovan: {
       url: "https://kovan.infura.io/v3/2d9d5a3ae51e4816a66d4c44077e1eb3", //<---- YOUR INFURA ID! (or it won't work)
-      accounts: {
-        mnemonic: mnemonic(),
-      },
+      accounts: [process.env.PRIVATE_KEY]
     },
     mainnet: {
       url: "https://mainnet.infura.io/v3/2d9d5a3ae51e4816a66d4c44077e1eb3", //<---- YOUR INFURA ID! (or it won't work)
-      accounts: {
-        mnemonic: mnemonic(),
-      },
+      accounts: [process.env.PRIVATE_KEY]
     },
     ropsten: {
       url: "https://ropsten.infura.io/v3/2d9d5a3ae51e4816a66d4c44077e1eb3", //<---- YOUR INFURA ID! (or it won't work)
-      accounts: {
-        mnemonic: mnemonic(),
-      },
+      accounts: [process.env.PRIVATE_KEY]
     },
     goerli: {
       url: "https://goerli.infura.io/v3/2d9d5a3ae51e4816a66d4c44077e1eb3", //<---- YOUR INFURA ID! (or it won't work)
-      accounts: {
-        mnemonic: mnemonic(),
-      },
+      accounts: [process.env.PRIVATE_KEY]
     },
     xdai: {
       url: 'https://rpc.xdaichain.com/',
@@ -90,9 +82,7 @@ module.exports = {
     matic: {
       url: 'https://rpc-mainnet.maticvigil.com/',
       gasPrice: 1000000000,
-      accounts: {
-        mnemonic: mnemonic(),
-      },
+      accounts: [process.env.PRIVATE_KEY]
     },
   },
   solidity: {
@@ -121,7 +111,7 @@ module.exports = {
   etherscan: {
     // Your API key for Etherscan
     // Obtain one at https://etherscan.io/
-    apiKey: "PSW8C433Q667DVEX5BCRMGNAH9FSGFZ7Q8"
+    apiKey: "2SAA4UB8R19NDK4IA2NT8QM7TA4XMXMV2Z"
   }
 };
 
@@ -368,7 +358,7 @@ task("send", "Send ETH")
       ).toHexString(),
       nonce: await fromSigner.getTransactionCount(),
       gasPrice: parseUnits(
-          taskArgs.gasPrice ? taskArgs.gasPrice : "1.001",
+          taskArgs.gasPrice ? taskArgs.gasPrice : "2.001",
           "gwei"
       ).toHexString(),
       gasLimit: taskArgs.gasLimit ? taskArgs.gasLimit : 24000,

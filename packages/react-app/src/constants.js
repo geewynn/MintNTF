@@ -1,14 +1,14 @@
 // API token for nft.storage. Please sign up and replace this with your own key from https://nft.storage/manage/
-export const NFT_STORAGE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkaWQ6ZXRocjoweDQxMjY5RGIwQjdjNzA3Y0I0MjZCMjg2MUI1NTY2ZEEwZTZjQzVmOTAiLCJpc3MiOiJuZnQtc3RvcmFnZSIsImlhdCI6MTYyMjA2NTE1OTYxMCwibmFtZSI6Im5mdHNjaG9vbC10ZXN0In0.DSgQ5yot5Qyp4_OMg16h7hHOSRUQK7jkjiH7sM3DHOE";
+export const NFT_STORAGE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkaWQ6ZXRocjoweEI4ZGMyMzEwMjVFMGI3NzVmNzg4NjNiQjI1OTFBNkY5NEZhMzAxN2UiLCJpc3MiOiJuZnQtc3RvcmFnZSIsImlhdCI6MTYzMDI3MDQ4NTU5NSwibmFtZSI6Im1pbnQifQ.3wwnp3oqlBe6z4AIJiZD5D4vD9DkRRDcbsSPYx5TCIw";
 
 // Infura project ID. If you're building a real app based on this, please replace with your own from https://infura.io/dashboard/ethereum
-export const INFURA_ID = "69f75bb89ba74822b512b464ef1495c9";
+export const INFURA_ID = "2d9d5a3ae51e4816a66d4c44077e1eb3";
 
 // Key for Etherscan.io. If you're building a real app based on this, please replace with your own from https://etherscan.io/myapikey
-export const ETHERSCAN_KEY = "6EAGC2DEG6PP3M1GP1I86QJPQAUE4ESW1W";
+export const ETHERSCAN_KEY = "2SAA4UB8R19NDK4IA2NT8QM7TA4XMXMV2Z";
 
 // BLOCKNATIVE ID FOR Notify.js:
-export const BLOCKNATIVE_DAPPID = "0b58206a-f3c0-4701-a62f-73c7243e8c77";
+export const BLOCKNATIVE_DAPPID = "39fa554b-9d58-49db-bcbd-0c6cd3956e3a";
 
 
 export const DEFAULT_CONTRACT_NAME = "NFTMinter";
